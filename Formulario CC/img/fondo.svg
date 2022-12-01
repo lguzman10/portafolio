@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="872.235" height="742.1" viewBox="0 0 872.235 742.1">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.783" y1="0.385" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3968d6"/>
+      <stop offset="0.339" stop-color="#0e63e2" stop-opacity="0.812"/>
+      <stop offset="0.514" stop-color="#1793d5" stop-opacity="0.875"/>
+      <stop offset="0.753" stop-color="#3bcbad"/>
+      <stop offset="0.758" stop-color="#37cdb4"/>
+      <stop offset="1" stop-color="#12dbf2"/>
+    </linearGradient>
+    <filter id="Fondp" x="0" y="0" width="872.235" height="742.1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-24" dy="18" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feFlood flood-opacity="0.129"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Fondp)">
+    <path id="Fondp-2" data-name="Fondp" d="M1567,189.9l.187,656.546s181.2-21.676,328.43-49.842,298.494-153.633,152.262-231.124c-100.315-53.159-74.1-160.429,0-235.023,33.836-34.061,81.708-47.137,131.959-52.363,160.034-16.644,175.4-89.747,175.4-89.747Z" transform="translate(-1501 -164.34)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,321 @@
+/*Como usaru las fuentes: 
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    Montserrat: 200, 400, 700
+    Lato: 300, 400, 700
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ---------- Header ----------*/
+
+.contenedor-header{
+    width: 100%;
+    max-width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 15px rgba(90, 89, 89, 0.344);
+}
+
+/* ---------- Barra de estado/Progreso ----------*/
+
+.contenedor-barra-estado{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    overflow: visible;
+    
+} 
+
+.contenedor-Barra{
+    text-align: center;
+}
+
+.progreso-contenedor{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 550px;
+}
+
+.progreso{
+    background-color: #6b2cfd;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.circle{
+    background-color: #6b2cfd;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle.active{
+    background-color: #fff;
+    color: #6b2cfd;
+    border: 4px solid  #6b2cfd;
+}
+
+
+/* ---------- Contenedor principal ----------*/
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 650px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #fff;
+    /*background-image: url(../img/fondo.svg);*/
+    padding: 0;
+    box-shadow: 0px 9px 17px rgba(90, 89, 89, 0.344);
+}
+
+.caja{
+    align-self: baseline;
+    margin: 40px 0px 10px 560px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/* ---------- Contenedor tarjeta ----------*/
+
+.tarjeta{
+    width: 100%;
+	max-width: 450px;
+	position: relative;
+    align-self: baseline;
+    margin: 50px 60px 0px 60px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.tarjeta > div {
+	padding: 22px;
+	border-radius: 15px;
+	max-height: 230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
+}
+
+/* ---------- Vista delantera ----------*/
+
+.tarjeta .vista-delantera {
+	width: 100%;
+    background-image: linear-gradient(90deg, #276bff, #4781ff 50%, #35cbbc);
+	background-size: cover;
+}
+
+.vista-delantera .logo {
+	text-align: right;
+	max-height: 39px;
+}
+
+.vista-delantera .logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.vista-delantera .chip {
+	width: 100%;
+	max-width: 40px;
+    max-height: 30px;
+	margin-bottom: 20px;
+}
+
+.vista-delantera .grupo .label {
+	font-size: 15px;
+    font-family: 'Lato', sans-serif;
+	color: #000000;
+    font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.vista-delantera .grupo .numero,
+.vista-delantera .grupo .nombre,
+.vista-delantera .grupo .expiracion {
+	color: #fff;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.vista-delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.formulario-tarjeta {
+	width: 100%;
+	max-width: 500px;
+	padding: 0px 0px 30px 0px;
+	border-radius: 10px;
+    margin: 30px 1px 10px 0px;
+	position: relative;
+}
+
+.formulario-tarjeta label {
+	display: block;
+	color: #42464b;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select{
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+	border: 2px solid #93BDED;
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}
+
+.formulario-tarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+	width: 100%;
+}
+
+.formulario-tarjeta .ccv {
+	min-width: 100px;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+/* .formulario-tarjeta select {
+	-webkit-appearance: none;
+} */
+
+.formulario-tarjeta .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.resumen{
+    width: 50%;
+    max-width: 600px;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.contenedor-caja{
+    width: 100%;
+    max-width: 500px;
+    max-height: 80px;
+    margin-left: 100px;
+    margin-top: -100px;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+    box-shadow:  0px 1px 15px #00000026;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.cantidad{
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+.btn-pagar{
+    background-image: linear-gradient(70deg, #276bff, #40b1fc 50%, #35cbbc);
+    width: 200px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 295px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-pagar i{
+    margin-left: 8px;
+}
+
+.btn-pagar:focus {
+    outline: 2px solid rgb(35, 17, 192);
+  }
