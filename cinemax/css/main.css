@@ -1,0 +1,119 @@
+/*ESTILOS index.html*/
+
+#ribbon{
+    background-color: rgb(28, 46, 201);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(21, 37, 131, 0.5) 25px,  rgba(21, 37, 131, 0.5) 40px);
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+#birthday{
+    background-color: rgb(34, 10, 173);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: linear-gradient(
+90deg
+, #276bff, #4781ff 50%, #35cbbc);
+}
+
+.card-border{
+    border: linear-gradient(
+        90deg
+        , #276bff, #4781ff 50%, #35cbbc);;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+#footer{
+    background-color: #159957;
+    background-image: linear-gradient(
+180deg
+,#35cbbc, #4781ff 50%,  #276bff);
+
+}
+
+.redes-container{
+    display: flex;
+    height: 10vh;
+    margin-top: 10%;
+    margin-left: 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: transparent;
+    color: white;
+    line-height: 50px;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.redes-container ul li a:hover{
+    transform: translateY(2px) scale(1.05);
+    box-shadow: 0 5px 5px 0 px rgba(0, 0, 0, 0.5);
+    filter: none;
+}
+
+.redes-container ul li .Facebook{
+    align-items: center;
+    background: #276bff;
+}
+
+.redes-container ul li .Instagram{
+    align-items: center;
+    background: rgb(235, 32, 191);
+}
+
+/*Estilos cartelera.html*/
+.bgradient {
+    color: #fff;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(
+90deg
+, #276bff, #4781ff 50%, #35cbbc);
+}
+
