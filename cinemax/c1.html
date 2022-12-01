@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximos Estrenos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="bgradient"> 
+
+   <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #094B8F;">
+    <div class="container-fluid">
+      <a class="navbar-brand mr-auto" href="index.html">
+        <img src="img/logo.jpg.png" alt="" width="200">
+      </a>
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cartelera.html">Próximos Estrenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Acerca de</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="btn btn-outline-light" href="reserva.html" role="button">Reservar</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <!--PELICULAS-->
+
+  <div class="Card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/img/estrenos/gvk.jpg" alt="..." 
+             style="width: 300px; height: 500px; box-shadow: black; border-radius: 10px; overflow: hidden;"
+             class="pt-5">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title mt-5 col-lg-5" style="text-align: left; margin-left: 60px;">Godzilla vs Kong</h3>
+          <p class="card-text" style="text-align: justify; margin-right: 12%; margin-top: 10%; margin-left: 12%;">
+            Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas, 
+            se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. 
+            Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para 
+            descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos 
+            bestias que parecen tener las horas contadas sobre la faz de la Tierra.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Trailer -->
+  
+  <footer class="bg-light bgradient">
+    <div class="container text-center text-md-center">
+    <div class="row align-items-center ">
+        <p style="margin-top: 60px;">
+          <iframe src="https://www.youtube.com/embed/odM92ap8_c0" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+        </p>
+      </div>
+    </div>
+  </footer>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

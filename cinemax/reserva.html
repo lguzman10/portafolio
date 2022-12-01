@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/main.js"></script>
+
+</head>
+<body class="bgradient">
+    
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #094B8F;">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-auto" href="index.html">
+          <img src="img/logo.jpg.png" alt="" width="200">
+        </a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cartelera.html">Próximos Estrenos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Acerca de</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="btn btn-outline-light active" href="reserva.html" role="button">Reservar</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+      <!--FORMULARIO DE REGISTRO-->
+
+      <div class="container" id="fon">  
+        <form id="contact" action="php/enviar.php" method="POST" class="registro" name="enviar">
+          <h3 style="color: #4781ff ;">¡Reserva tu lugar!</h3>
+          <h4 style="color: #4781ff ;">Ingresa tus datos personales</h4>
+          <fieldset id="datos_usuario">
+            <input name="name" placeholder="Nombre" type="text" tabindex="1" id="nombre" required autofocus>
+          </fieldset>
+          <fieldset id="datos_usuario">
+            <input name="mail" placeholder="Correo electrónico" type="email" id="correo" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input name="phone" placeholder="Número de teléfono" type="tel" id="telefono" tabindex="3" required>
+          </fieldset id="datos_usuario">
+          <fieldset>    
+            <select name="selection" class="form-select" id="validationDefault04" style="font-size: 12px; 
+                                                                        border: 1px solid #ccc;
+                                                                        margin: 0 0 5px;      
+                                                                        padding: 10px;          
+                                                                        outline: 0;
+                                                                        border: 1px solid #aaa; 
+                                                                        width: 100%;" required>            
+              <option selected disabled value="">Selecciona una película...</option>
+              <option>Kong vs Godzilla | Expired</option>
+              <option>Ruega por nosotros | Mayo 8, 20:30hrs</option>
+              <option>Rampage: devastación | Mayo 9, 20:30hrs</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <input name="cantidad" placeholder="Cantidad de entradas" type="number" tabindex="3" min="0" max="20" required id="entradas">
+          </fieldset>
+          <fieldset>
+            <button name="registrarse" type="submit" id="contact-submit" data-submit="...Sending" onclick="return_calcular_montos">¡Reservar!</button>
+          </fieldset>
+          <fieldset>
+            <button name="reset" type="reset" id="reset-button" >Cancelar reservación</button>
+          </fieldset>
+          <fieldset id="error"></fieldset>
+          <p style="margin-top: 60px; color: #4781ff ;"> Copyright &copy; 2021 All rights reserved by:
+            <a href="about.html" style="text-decoration: none; font: bold;">
+              <strong class="text-blue">Cinémax</strong>
+            </a>
+          </p>
+        </form>
+      </div> 
+
+      <!--Formulario Nuevo -->
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
